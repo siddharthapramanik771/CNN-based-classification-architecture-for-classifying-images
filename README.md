@@ -30,7 +30,8 @@ The trained model was evaluated on the validation set, which was not used during
 The trained model was used to predict the types of charts in the test set, which consisted of 50 images. The images were loaded using the PIL library, and the prediction was made using the predict method of the Keras API. The predicted class label was then mapped to the corresponding type of chart using the type_list variable.
 
 ## Conclusion
-The CNN model achieved an accuracy of 97% on the validation set and correctly predicted the types of charts in the test set with a high accuracy. The model can be further improved by increasing the number of epochs, using a larger dataset, or using a more complex model architecture.
+The CNN model achieved an accuracy of 97% on the validation set and correctly predicted the types of charts in the test set with a high accuracy. The model can be further improved by increasing the number of epochs, using a larger dataset, or using a more complex model architecture. 
+The final model is saved for future use.
 
 ![Alt text](image.png)
 
