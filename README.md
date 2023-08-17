@@ -12,9 +12,16 @@ The dataset was loaded using Pandas data frames. Each record of the data frame c
 The CNN model consisted of three convolutional layers with ReLU activation functions followed by max-pooling layers. The convolutional layers were responsible for extracting features from the images. The output from the convolutional layers was then flattened and passed through two dense layers with ReLU activation functions. The final layer was a dense layer with a softmax activation function that produced the classification probabilities for the five classes of charts.
 
 ## Model Training
-The model was compiled using the Adam optimizer and sparse categorical cross-entropy loss function. The model was trained for 100 epochs with a batch size of 500. An early stopping callback was used to stop the training if the loss did not improve after 10 consecutive epochs.
+The model was compiled using the Adam optimizer and sparse categorical cross-entropy loss function. The model was trained for 100 epochs with a batch size of 500. An early stopping callback was used to stop the training if the validation loss did not improve after 10 consecutive epochs.
 
 The training and validation loss and accuracy were recorded for each epoch. The plots of the training and validation loss and accuracy were used to visualize the training process and evaluate the performance of the model.
+
+![Alt text](image-1.png)
+
+
+![Alt text](image-2.png)
+
+
 
 ## Model Evaluation
 The trained model was evaluated on the validation set, which was not used during the training process. The evaluation was done using the evaluate method of the Keras API, which calculated the loss and accuracy of the model on the validation set.
@@ -23,4 +30,8 @@ The trained model was evaluated on the validation set, which was not used during
 The trained model was used to predict the types of charts in the test set, which consisted of 50 images. The images were loaded using the PIL library, and the prediction was made using the predict method of the Keras API. The predicted class label was then mapped to the corresponding type of chart using the type_list variable.
 
 ## Conclusion
-The CNN model achieved an accuracy of 96% on the validation set and correctly predicted the types of charts in the test set with a high accuracy. The model can be further improved by increasing the number of epochs, using a larger dataset, or using a more complex model architecture.
+The CNN model achieved an accuracy of 97% on the validation set and correctly predicted the types of charts in the test set with a high accuracy. The model can be further improved by increasing the number of epochs, using a larger dataset, or using a more complex model architecture.
+
+![Alt text](image.png)
+
+![Alt text](image-3.png)
